@@ -1,0 +1,59 @@
+{
+  "resourceType": "DocumentReference",
+  "status": "current",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org",
+        "code": "34133-9",
+        "display": "Summarization of Clinical Note"
+      }
+    ]
+  },
+
+  "date": "2015-02-07T13:28:17.239+02:00",
+  "subject": {
+    "reference": "Patient/therapistId"
+  },
+  "author": [
+    {
+      "reference": "Practitioner",
+      "display": "Practitioner/Author Name",
+      "extension": [
+        {
+          "url": "https://ptmantra.com/fhir/StructureDefinition/author-npi",
+          "valueString": "authorNpiValue"
+        },
+        {
+          "url": "https://ptmantra.com/fhir/StructureDefinition/created-date",
+          "valueDateTime": "2024-09-02T07:35:43.781Z"
+        },
+        {
+          "url": "https://ptmantra.com/fhir/StructureDefinition/document-key",
+          "valueString": "string"
+        },
+        {
+          "url": "https://ptmantra.com/fhir/StructureDefinition/document-value",
+          "valueString": "string"
+        }
+      ]
+    }
+  ],
+
+  "content": [],
+  "extension": [
+    {
+      "url": "https://ptmantra.com/StructureDefinition/address-official",
+      "valueAddress": {
+        "line": ["House Number, Building, Cross and lane"],
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "postalCode": "560010"
+      }
+    },
+    {
+      "url": "https://ptmantra.com/fhir/StructureDefinition/source",
+      "valueString": "SourceType"
+    }
+  ]
+}

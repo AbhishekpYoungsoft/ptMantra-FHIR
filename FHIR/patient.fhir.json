@@ -1,0 +1,73 @@
+{
+    "resourceType": "Patient",
+    "identifier": [
+      {
+        "use": "official",
+        "value": "mrn number"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "given": ["Patient Name"],
+        "family": "Patient family name"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1905-08-23",
+    "telecom": [
+      {
+        "use": "home",
+        "system": "email",
+        "value": "patient email adress"
+      },
+      {
+        "use": "mobile",
+        "system": "phone",
+        "value": "patient phone number"
+      }
+    ],
+    "address": [
+      {
+        "line": ["House Number, Building, Cross and lane"],
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "postalCode": "560010"
+      }
+    ],
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/therapistId"
+      }
+    ],
+  
+    "extension": [
+      {
+        "url": "https://ptmantra.com/fhir/StructureDefinition/gender-at-birth",
+        "valueString": "male"
+      },
+      {
+        "url": "https://ptmantra.com/fhir/StructureDefinition/rtm",
+        "valueBoolean": true
+      },
+      {
+        "url": "https://ptmantra.com/fhir/StructureDefinition/weight-value",
+        "valueQuantity": {
+          "value": 70,
+          "unit": "kg"
+        }
+      },
+      {
+        "url": "https://ptmantra.com/fhir/StructureDefinition/height-value",
+        "valueQuantity": {
+          "value": 176,
+          "unit": "cm"
+        }
+      },
+      {
+        "url": "https://ptmantra.com/fhir/StructureDefinition/source",
+        "valueString": "string"
+      }
+    ]
+  }
+  
