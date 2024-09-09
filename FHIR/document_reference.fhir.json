@@ -40,7 +40,11 @@
     }
   ],
 
-  "content": [],
+  "content": [
+    {
+      "attachment": {}
+    }
+  ],
   "extension": [
     {
       "url": "https://ptmantra.com/StructureDefinition/address-official",

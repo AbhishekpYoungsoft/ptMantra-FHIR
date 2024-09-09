@@ -43,7 +43,7 @@
   
     "extension": [
       {
-        "url": "https://ptmantra.com/fhir/StructureDefinition/gender-at-birth",
+        "url": "http://hl7.org/fhir/ValueSet/administrative-gender",
         "valueString": "male"
       },
       {
@@ -51,21 +51,21 @@
         "valueBoolean": true
       },
       {
-        "url": "https://ptmantra.com/fhir/StructureDefinition/weight-value",
+        "url": "http://hl7.org/fhir/StructureDefinition/bodyweight",
         "valueQuantity": {
           "value": 70,
           "unit": "kg"
         }
       },
       {
-        "url": "https://ptmantra.com/fhir/StructureDefinition/height-value",
+        "url": "http://hl7.org/fhir/StructureDefinition/bodyheight",
         "valueQuantity": {
           "value": 176,
           "unit": "cm"
         }
       },
       {
-        "url": "https://ptmantra.com/fhir/StructureDefinition/source",
+        "url": "http://hl7.org/fhir/StructureDefinition/resource-instance-name",
         "valueString": "string"
       }
     ]

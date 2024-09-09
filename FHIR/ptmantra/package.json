@@ -1,0 +1,10 @@
+{
+  "name": "ptmantra",
+  "version": "1.0.0",
+  "dependencies": {
+    "hl7.fhir.r5.core": "5.0.0"
+  },
+  "fhirVersions": [
+    "5.0.0"
+  ]
+}
