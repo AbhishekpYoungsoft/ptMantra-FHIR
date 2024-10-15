@@ -1,0 +1,54 @@
+{
+    "resourceType": "Procedure",
+    "id": "id",
+    "subject": {
+        "reference": "Patient/example-patient"
+    },
+    "performer": [
+        {
+          "actor": {
+            "identifier": {
+                "use": "official",
+                "type": {
+                    "coding": [
+                        {
+                            "code": "NPI",
+                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                            "id": "npiID"
+                        }
+                    ]
+                }
+            }
+          }
+        }
+      ],
+   "occurrencePeriod": {
+    "start": "2024-10-09",
+    "end": "2024-10-09"
+   },
+   "code": {
+    "coding": [
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "98975",
+        "display": "Remote therapeutic monitoring of therapy adherence"
+      },
+      {
+        "system": "http://www.ama-assn.org/go/cpt",
+        "code": "98977",
+        "display": "Remote therapeutic monitoring of therapy adherence"
+      }
+    ]
+  },
+    "extension": [
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/trxDaysCount",
+        "valueInteger": 0
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/isClaimed",
+        "valueBoolean": true 
+      }
+    ]
+  }
+  

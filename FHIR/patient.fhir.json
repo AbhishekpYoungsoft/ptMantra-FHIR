@@ -1,73 +1,94 @@
 {
-    "resourceType": "Patient",
-    "identifier": [
-      {
-        "use": "official",
-        "value": "mrn number"
-      }
-    ],
-    "name": [
-      {
-        "use": "official",
-        "given": ["Patient Name"],
-        "family": "Patient family name"
-      }
-    ],
-    "gender": "male",
-    "birthDate": "1905-08-23",
-    "telecom": [
-      {
-        "use": "home",
-        "system": "email",
-        "value": "patient email adress"
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR",
+            "display": "Medical record number"
+          }
+        ]
       },
-      {
-        "use": "mobile",
-        "system": "phone",
-        "value": "patient phone number"
+      "value": "mrn-123456"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "given": ["Patient Name"],
+      "family": "Patient family name"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1905-08-23",
+  "telecom": [
+    {
+      "use": "home",
+      "system": "email",
+      "value": "patient email adress"
+    },
+    {
+      "use": "mobile",
+      "system": "phone",
+      "value": "patient phone number"
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "identifier": {
+        "use": "official",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "RI",
+              "display": "Therapist Id"
+            }
+          ]
+        },
+        "value": "therapistId value"
       }
-    ],
-    "address": [
-      {
-        "line": ["House Number, Building, Cross and lane"],
+    }
+  ],
+
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender",
+      "valueString": "male"
+    },
+    {
+      "url": "http://ptmantra.com/fhir/StructureDefinition/rtm",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/bodyweight",
+      "valueQuantity": {
+        "value": 70,
+        "unit": "kg"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/bodyheight",
+      "valueQuantity": {
+        "value": 176,
+        "unit": "cm"
+      }
+    },
+    {
+      "url": "http://ptmantra.com/fhir/StructureDefinition/source-type",
+      "valueString": "therapist"
+    },
+    {
+      "url": "http://ptmantra.com/fhir/StructureDefinition/clinic-address",
+      "valueAddress": {
+        "line": ["House Number,Clinic Building, Cross and lane"],
         "city": "Bangalore",
         "state": "Karnataka",
         "postalCode": "560010"
       }
-    ],
-    "generalPractitioner": [
-      {
-        "reference": "Practitioner/therapistId"
-      }
-    ],
-  
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/ValueSet/administrative-gender",
-        "valueString": "male"
-      },
-      {
-        "url": "https://ptmantra.com/fhir/StructureDefinition/rtm",
-        "valueBoolean": true
-      },
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/bodyweight",
-        "valueQuantity": {
-          "value": 70,
-          "unit": "kg"
-        }
-      },
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/bodyheight",
-        "valueQuantity": {
-          "value": 176,
-          "unit": "cm"
-        }
-      },
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/resource-instance-name",
-        "valueString": "string"
-      }
-    ]
-  }
-  
+    }
+  ]
+}

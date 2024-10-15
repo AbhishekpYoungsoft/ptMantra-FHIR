@@ -1,0 +1,91 @@
+{
+    "resourceType": "Claim",
+    "status": "active",
+    "type": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+          "code": "professional",
+          "display": "Professional"
+        }
+      ]
+    },
+    "use": "claim",
+    "patient": {
+      "reference": "Patient/patient-123"
+    },
+    "created": "2024-10-10T15:16:18+05:30",
+    "item": [
+      {
+        "id": "claim-1",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/isClaimed",
+            "valueBoolean": true
+          },
+          {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/npi-value",
+            "valueString": "1234567890"
+          }
+        ],
+        "sequence": 1,
+        "productOrService": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "CPT1234",
+              "display": "Exercise/Procedure CPT Code"
+            },
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "CPT5678",
+              "display": "Exercise/Procedure CPT Code"
+            }
+          ]
+        },
+        "servicedPeriod": {
+          "start": "2024-01-01T00:00:00+05:30",
+          "end": "2024-01-05T00:00:00+05:30"
+        },
+        "quantity": {
+          "value": 5,
+          "unit": "d",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      },
+      {
+        "id": "claim-2",
+        "extension": [
+          {
+            "url": "http://example.org/fhir/StructureDefinition/isClaimed",
+            "valueBoolean": false
+          },
+          {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/npi-value",
+            "valueString": "0987654321"
+          }
+        ],
+        "sequence": 2,
+        "productOrService": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "CPT91011",
+              "display": "Exercise/Procedure CPT Code"
+            }
+          ]
+        },
+        "servicedPeriod": {
+          "start": "2024-02-01T00:00:00+05:30",
+          "end": "2024-02-03T00:00:00+05:30"
+        },
+        "quantity": {
+          "value": 3,
+          "unit": "d",
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      }
+    ]
+  }

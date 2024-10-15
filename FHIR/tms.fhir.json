@@ -1,0 +1,91 @@
+{
+  "resourceType": "Claim",
+  "status": "active",
+  "use": "claim",
+  "created": "2024-10-10",
+  "patient": {
+    "reference": "Patient/example-patient"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "professional",
+        "display": "Professional"
+      }
+    ]
+  },
+  "item": [
+    {
+      "id": "claimId",
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://www.ama-assn.org/go/cpt",
+            "code": "98975",
+            "display": "Treatment Management Service",
+            "extension": [
+              {
+                "url": "http://ptmantra.com/fhir/StructureDefinition/npi-value",
+                "valueString": "authorNpiValue"
+              },
+              {
+                "url": "http://ptmantra.com/fhir/StructureDefinition/tms-claim-unit",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        ]
+      },
+      "servicedPeriod": {
+        "end": "2024-10-09"
+      },
+      "extension": [
+        {
+          "url": "http://ptmantra.com/fhir/StructureDefinition/totalTimeSpent",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://ptmantra.com/fhir/StructureDefinition/isClaimed",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://www.ama-assn.org/go/cpt",
+            "code": "98977",
+            "display": "Treatment Management Service",
+            "extension": [
+              {
+                "url": "http://ptmantra.com/fhir/StructureDefinition/npi-value",
+                "valueString": "authorNpiValue"
+              },
+              {
+                "url": "http://ptmantra.com/fhir/StructureDefinition/tms-claim-unit",
+                "valueDecimal": 2
+              }
+            ]
+          }
+        ]
+      },
+      "servicedPeriod": {
+        "end": "2024-10-09"
+      },
+      "extension": [
+        {
+          "url": "http://ptmantra.com/fhir/StructureDefinition/totalTimeSpent",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://ptmantra.com/fhir/StructureDefinition/isClaimed",
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}

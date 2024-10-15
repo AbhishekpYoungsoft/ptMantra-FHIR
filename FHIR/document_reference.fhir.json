@@ -1,63 +1,54 @@
 {
   "resourceType": "DocumentReference",
   "status": "current",
-  "type": {
-    "coding": [
-      {
-        "system": "http://hl7.org",
-        "code": "34133-9",
-        "display": "Summarization of Clinical Note"
-      }
-    ]
-  },
-
   "date": "2015-02-07T13:28:17.239+02:00",
-  "subject": {
-    "reference": "Patient/therapistId"
-  },
   "author": [
     {
       "reference": "Practitioner",
-      "display": "Practitioner/Author Name",
+      "identifier": {
+        "value": "6437ad2fdf7ef725f2dd34d6"
+      },
+      "display": "Practitioner/--Trinks--",
       "extension": [
         {
-          "url": "https://ptmantra.com/fhir/StructureDefinition/author-npi",
+          "url": "http://ptmantra.com/fhir/StructureDefinition/npi-value",
           "valueString": "authorNpiValue"
         },
         {
-          "url": "https://ptmantra.com/fhir/StructureDefinition/created-date",
+          "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
           "valueDateTime": "2024-09-02T07:35:43.781Z"
         },
         {
-          "url": "https://ptmantra.com/fhir/StructureDefinition/document-key",
-          "valueString": "string"
+          "url": "http://ptmantra.com/fhir/StructureDefinition/key",
+          "valueString": "--key--"
         },
         {
-          "url": "https://ptmantra.com/fhir/StructureDefinition/document-value",
-          "valueString": "string"
+          "url": "http://ptmantra.com/fhir/StructureDefinition/value",
+          "valueString": "--value--"
         }
       ]
     }
   ],
-
   "content": [
     {
-      "attachment": {}
+      "attachment": {
+        "contentType": "application/json"
+      }
     }
   ],
   "extension": [
     {
-      "url": "https://ptmantra.com/StructureDefinition/address-official",
+      "url": "http://ptmantra.com/fhir/StructureDefinition/clinic-address",
       "valueAddress": {
-        "line": ["House Number, Building, Cross and lane"],
-        "city": "Bangalore",
-        "state": "Karnataka",
-        "postalCode": "560010"
+        "line": ["Buenos Aires"],
+        "city": "nyc",
+        "state": "al",
+        "postalCode": "66600"
       }
     },
     {
-      "url": "https://ptmantra.com/fhir/StructureDefinition/source",
-      "valueString": "SourceType"
+      "url": "http://ptmantra.com/fhir/StructureDefinition/source-type",
+      "valueString": "--SourceType--"
     }
   ]
 }
