@@ -1,0 +1,126 @@
+{
+    "resourceType": "Bundle",
+    "type": "collection",
+    "total": 3,
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Organization",
+          "identifier": [
+            {
+              "use": "official",
+              "system": "http://ptmantra.com/fhir/StructureDefinition/clinic-id",
+              "value": "CLINIC123"
+            },
+            {
+              "use": "official",
+              "system": "http://hl7.org/fhir/sid/us-npi",
+              "value": "npiType2"
+            }
+          ],
+          "name": "Clinic name",
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "phone",
+              "use": "contact"
+            },
+            {
+              "system": "phone",
+              "value": "adminContactNumber",
+              "use": "admin"
+            },
+            {
+              "system": "phone",
+              "value": "claimsContactNumber",
+              "use": "claims"
+            },
+            {
+              "system": "email",
+              "value": "email",
+              "use": "work"
+            }
+          ],
+          "address": [
+            {
+              "line": ["address"],
+              "city": "city",
+              "state": "state",
+              "postalCode": "zipcode",
+              "country": "US"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://ptmantra.com/fhir/StructureDefinition/logo-url",
+              "valueUrl": "logoURL"
+            },
+            {
+              "url": "http://ptmantra.com/fhir/StructureDefinition/map-url",
+              "valueUrl": "mapURL"
+            }
+          ]
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Organization",
+          "identifier": [
+            {
+              "use": "official",
+              "system": "http://ptmantra.com/fhir/StructureDefinition/clinic-id",
+              "value": "CLINIC124"
+            },
+            {
+              "use": "official",
+              "system": "http://hl7.org/fhir/sid/us-npi",
+              "value": "npiType3"
+            }
+          ],
+          "name": "Clinic name 2",
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "phone",
+              "use": "contact"
+            },
+            {
+              "system": "phone",
+              "value": "adminContactNumber",
+              "use": "admin"
+            },
+            {
+              "system": "phone",
+              "value": "claimsContactNumber",
+              "use": "claims"
+            },
+            {
+              "system": "email",
+              "value": "email",
+              "use": "work"
+            }
+          ],
+          "address": [
+            {
+              "line": ["address"],
+              "city": "city",
+              "state": "state",
+              "postalCode": "zipcode",
+              "country": "US"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://ptmantra.com/fhir/StructureDefinition/logo-url",
+              "valueUrl": "logoURL"
+            },
+            {
+              "url": "http://ptmantra.com/fhir/StructureDefinition/map-url",
+              "valueUrl": "mapURL"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
