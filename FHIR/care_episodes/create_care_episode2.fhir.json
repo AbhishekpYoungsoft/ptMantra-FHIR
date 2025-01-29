@@ -1,0 +1,26 @@
+{
+  "resourceType": "EpisodeOfCare",
+  "status": "finished",
+  "patient": {
+    "reference": "Patient/example-patient-id",
+    "display": "Mandatory field"
+  },
+  "diagnosis": [
+    {
+      "condition": [
+        {
+          "display": "condition description"
+        }
+      ]
+    }
+  ],
+  "period": {
+    "start": "2024-12-09T09:01:27.216Z"
+  },
+  "managingOrganization": {
+    "reference": "Organization/example-clinic-id"
+  },
+  "careManager": {
+    "reference": "Practitioner/example-therapist-id"
+  }
+}

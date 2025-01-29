@@ -1,0 +1,92 @@
+{
+    "resourceType": "Patient",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical record number"
+                    }
+                ]
+            },
+            "value": "ICD-001"
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "given": [
+                "Purvi"
+            ],
+            "family": "NK"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1999-12-12",
+    "telecom": [
+        {
+            "use": "home",
+            "system": "email",
+            "value": "purvi7@yopmail.com"
+        },
+        {
+            "use": "mobile",
+            "system": "phone",
+            "value": "1234567890"
+        }
+    ],
+    "generalPractitioner": [
+        {
+            "reference": "Practitioner/<<THERAPIST_ID>>",
+            "identifier": {
+                "value": "<<THERAPIST_ID>>"
+            }
+        }
+    ],
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender",
+            "valueString": "female"
+        },
+        {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/rtm",
+            "valueBoolean": true
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/bodyweight",
+            "valueQuantity": {
+                "value": 70,
+                "unit": "kg"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/bodyheight",
+            "valueQuantity": {
+                "value": 170,
+                "unit": "cm"
+            }
+        },
+        {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/source-type",
+            "valueString": "ptMantra FHIR"
+        },
+        {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/clinic-address",
+            "valueAddress": {
+                "line": [
+                    "47 W 13th St"
+                ],
+                "city": "New York",
+                "state": "NY",
+                "postalCode": "10011"
+            }
+        },
+        {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/clinic-id",
+            "valueString": "clinic-id"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "EpisodeOfCare",
+        "id": "episode-0",
+        "status": "string",
+        "period": {
+          "start": "2025-01-28T05:10:42.047Z",
+          "end": "2025-01-28T05:10:42.047Z"
+        },
+        "patient": {
+          "reference": "Patient/example-patient-id"
+        },
+        "managingOrganization": {
+          "reference": "Organization/example-clinic-id"
+        },
+        "careManager": {
+          "reference": "Practitioner/createdByName",
+          "identifier": {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "authorNpiValue"
+          }
+        },
+        "diagnosis": [
+          {
+            "condition": {
+              "text": "string"
+            }
+          }
+        ],
+        "team": [
+          {
+            "reference": "https://fhir.example.com/CareTeam/careteam-1"
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/emr-id",
+            "valueString": "string"
+          },
+          {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/patient-phone",
+            "valueInteger": 1234567890
+        },
+          {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/rtm",
+            "valueBoolean": true
+        },
+        {
+          "url": "http://ptmantra.com/fhir/StructureDefinition/exercises",
+          "valueReference": {
+            "reference": "Bundle/exercise-bundle-1"
+          }
+        }
+        ]
+      }
+    }
+  ]
+}

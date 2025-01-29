@@ -1,0 +1,27 @@
+{
+    "resourceType": "Bundle",
+    "type": "collection",
+    "total": 1,
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Procedure",
+          "status": "completed",
+          "code": {
+            "text": "Squats"
+          },
+          "subject": {
+            "reference": "Patient/61c2ae7670f0ef5d53615d0"
+          },
+          "performedDateTime": "2022-03-16T05:33:18.319Z",
+          "extension": [
+            {
+              "url": "http://ptmantra.com/fhir/StructureDefinition/transmissionType",
+              "valueString": "SUBMIT_RECORDING"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

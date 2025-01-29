@@ -1,0 +1,25 @@
+{
+    "resourceType": "CarePlan",
+    "subject": {
+      "reference": "Patient/patientId"
+    },
+    "activity": [
+      {
+        "reference": {
+          "reference": "Procedure/exercise1"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Procedure/exercise2"
+        }
+      }
+    ],
+    "note": [
+      {
+        "authorReference": {
+          "reference": "Observation/note1"
+        }      }
+    ]
+  }
+  

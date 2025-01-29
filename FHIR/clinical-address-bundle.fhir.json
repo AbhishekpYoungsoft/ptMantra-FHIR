@@ -1,0 +1,80 @@
+{
+  "resourceType": "Bundle",
+  "total": 11,
+  "entry": [
+    {
+      "resource": 
+      {
+        "resourceType": "Organization",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1669760625" 
+          }
+        ],
+        "name": "Advanced Theragenics",
+        "contact": [
+          {
+            "address": {
+              "line": [
+                "77 9th ave"
+              ],
+              "city": "New York",
+              "postalCode": "10011", 
+              "country": "US"
+      
+            }
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/6419910dd6e3f1352a1c7d1b"
+        },
+       "extension": [
+        {
+          "url": "http://ptmantra.com/fhir/StructureDefinition/clinic-id",
+          "valueString": "CLINIC123"
+        }
+      ]
+      
+      }
+    },
+    {
+      "resource": 
+      {
+        "resourceType": "Organization",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1669760625" 
+          }
+        ],
+        "name": "Advanced Theragenics",
+        "contact": [
+          {
+            "address": {
+              "line": [
+                "77 9th ave"
+              ],
+              "city": "New York",
+              "postalCode": "10011", 
+              "country": "US"
+      
+            }
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/6419910dd6e3f1352a1c7d1b"
+        },
+       "extension": [
+        {
+          "url": "http://ptmantra.com/fhir/StructureDefinition/clinic-id",
+          "valueString": "CLINIC123"
+        }
+      ]
+      
+      }
+    }
+  ]
+}

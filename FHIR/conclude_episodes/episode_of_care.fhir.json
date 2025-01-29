@@ -1,0 +1,17 @@
+{
+    "resourceType": "EpisodeOfCare",
+    "status": "active",
+    "patient": {
+      "reference": "Patient/{patientId}"
+    },
+    "managingOrganization": {
+      "reference": "Organization/{clinicId}"
+    },
+    "careManager": {
+      "reference": "Practitioner/{therapistId}"
+    },
+    "period": {
+      "end": "2025-01-24T06:17:33.891Z"
+    }
+  }
+  

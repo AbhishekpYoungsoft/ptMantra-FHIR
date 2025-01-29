@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "note1",
+  "performer": [
+    {
+      "reference": "Practitioner",
+      "identifier": {
+        "value": "THERAPIST_ID"
+      }
+    }
+  ],
+  "valueString": "string",
+  "effectivePeriod": {
+    "start": "2024-12-09T06:33:33.799Z",
+    "end": "2024-12-09T07:33:33.799Z"
+  },
+  "extension": [
+    {
+      "url": "http://ptmantra.com/fhir/StructureDefinition/action",
+      "valueString": "string"
+    },
+    {
+      "url": "http://ptmantra.com/fhir/StructureDefinition/reportRTM",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://ptmantra.com/fhir/StructureDefinition/urgent",
+      "valueBoolean": true
+    }
+  ]
+}

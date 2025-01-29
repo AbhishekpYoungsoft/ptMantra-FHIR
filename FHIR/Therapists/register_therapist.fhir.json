@@ -27,7 +27,7 @@
     "extension": [
         {
           "url": "http://ptmantra.com/fhir/StructureDefinition/Practitioner-profile",
-          "valueCode": "PT"
+          "valueString": "PT"
         }
       ]
   }

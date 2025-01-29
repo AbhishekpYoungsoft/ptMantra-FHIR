@@ -1,0 +1,62 @@
+{
+    "resourceType": "Bundle",
+    "type": "collection",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Practitioner",
+          "name": [
+            {
+              "family": "string",
+              "given": ["string"]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "email",
+              "value": "string",
+              "use": "work"
+            },
+            {
+              "system": "phone",
+              "value": "string",
+              "use": "work"
+            }
+          ],
+          "address": {
+            "line": "string",
+            "city": "string",
+            "state": "string",
+            "postalCode": "string",
+            "country": "string"
+          },
+          "identifier": [
+            {
+              "system": "http://hl7.org/fhir/sid/us-npi",
+              "value": "string"
+            },
+            {
+                "system": "http://ptmantra.com/fhir/StructureDefinition/PractitionerId",
+                "value": "string"
+            }
+
+          ],
+          "extension": [
+            {
+              "url": "http://example.org/fhir/StructureDefinition/therapistClinicIds",
+              "valueString": "string"
+            },
+            {
+              "url": "http://example.org/fhir/StructureDefinition/enumerationType",
+              "valueString": "string"
+            },
+            {
+              "url": "http://example.org/fhir/StructureDefinition/parentClinicId",
+              "valueString": "string"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

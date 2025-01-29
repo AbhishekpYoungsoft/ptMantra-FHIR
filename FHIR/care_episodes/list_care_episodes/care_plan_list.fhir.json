@@ -1,0 +1,74 @@
+{
+  "resourceType": "Bundle",
+  "id": "exercise-bundle-1",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "exercise-careplan-1",
+        "status": "active",
+        "intent": "order",
+        "author": {
+          "reference": "Practitioner/createdByName"
+        },
+        "activity": [
+          {
+            "id": "exercise-id",
+            "detail": {
+              "de": "string",
+              "scheduledPeriod": {
+                
+                "start": "2025-01-28T05:10:42.047Z"
+              },
+              "scheduledTiming": {
+                "event": [
+                  "2025-01-28T05:10:42.047Z"
+                ]
+              },
+              "status": "string",
+              "extension": [
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/frequency",
+                  "valueString": "string"
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/hold",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/is-active-during-ce-concluded",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/movement-id",
+                  "valueString": "string"
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/order",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/per",
+                  "valueString": "string"
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/repetition",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/rest",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "http://ptmantra.com/fhir/StructureDefinition/set",
+                  "valueInteger": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

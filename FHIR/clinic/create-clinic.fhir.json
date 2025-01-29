@@ -17,7 +17,7 @@
     {
       "system": "phone",
       "value": "phone",
-      "use": "contact"
+      "use": "work"
     },
     {
       "system": "phone",
@@ -47,11 +47,11 @@
   "extension": [
     {
       "url": "http://ptmantra.com/fhir/StructureDefinition/logo-url",
-      "valueUrl": "logoURL"
+      "valueString": "logoURL"
     },
     {
       "url": "http://ptmantra.com/fhir/StructureDefinition/map-url",
-      "valueUrl": "mapURL"
+      "valueString": "mapURL"
     }
   ]
 }

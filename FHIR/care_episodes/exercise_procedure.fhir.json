@@ -1,0 +1,98 @@
+{
+    "resourceType": "Procedure",
+    "id": "exercise1",
+    "identifier": [
+    {
+      "system": "http://ptmantra.com/fhir/StructureDefinition/exercise-id",
+      "value": "exerciseId123"
+    }
+  ],
+    "status": "completed",
+    "code": {
+      "text": "Specific exercise details-description"
+    },
+    "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/createdBy-id",
+        "display": "Dr. John Doe"
+      }
+    }
+  ],
+    "performedPeriod": {
+      "start": "2024-12-09T06:33:33.799Z"
+    },
+    "extension": [
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/frequency",
+        "valueString": "string"
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/hold",
+        "valueInteger": 30
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/movementId",
+        "valueString": "movement123"
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/repetition",
+        "valueInteger": 10
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/set",
+        "valueInteger": 3
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/isActiveDuringCeConcluded",
+        "valueBoolean": true
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/order",
+        "valueInteger": 1
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/per",
+        "valueString": "day"
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/rest",
+        "valueInteger": 15
+      },
+      {
+        "url": "http://ptmantra.com/fhir/StructureDefinition/statusPeriod",
+        "extension": [
+          {
+            "url": "startDate",
+            "valueDateTime": "2024-12-09T06:33:33.799Z"
+          },
+          {
+            "url": "endDate",
+            "valueDateTime": "2024-12-10T06:33:33.799Z"
+          },
+          {
+            "url": "active",
+            "valueBoolean": true
+          },
+          {
+            "url": "modifiedBy",
+            "valueString": "string"
+          },
+          {
+            "url": "http://ptmantra.com/fhir/StructureDefinition/dates",
+            "extension": [
+              {
+                "url": "date",
+                "valueDateTime": "2024-12-09T06:33:33.799Z"
+              },
+              {
+                "url": "date",
+                "valueDateTime": "2024-12-10T06:33:33.799Z"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
